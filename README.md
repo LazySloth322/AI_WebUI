@@ -24,7 +24,7 @@ A self-hosted, single-file Python web chat client for **any OpenAI-compatible AP
 ## Quick start
 
 ```bash
-cd openai-chat-ui
+cd ai_webui
 python3 -m venv .venv && source .venv/bin/activate   # optional but recommended
 pip install -r requirements.txt
 python app.py
