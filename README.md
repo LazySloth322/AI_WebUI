@@ -123,7 +123,7 @@ How the token limit works:
 ## Project layout
 
 ```
-openai-chat-ui/
+ai_webui/
 ├── app.py              # FastAPI backend (API proxying, history, usage, settings)
 ├── requirements.txt
 ├── static/
