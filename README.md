@@ -16,8 +16,6 @@ A self-hosted, single-file Python web chat client for **any OpenAI-compatible AP
 - **Streaming (SSE)** by default, with automatic fallback:
   - if a provider rejects `stream_options`, the request is retried once without it;
   - if the provider does not return usage in the final chunk, tokens are estimated.
-- **Proxy support**: HTTP / HTTPS / SOCKS5 proxy for API requests, configurable
-  in the UI, plus a TLS verification toggle.
 - Everything is stored locally in `data/` (SQLite for chats, `settings.json` for config).
 - Serves on **0.0.0.0:3080** — reachable from any device on your local network.
 
