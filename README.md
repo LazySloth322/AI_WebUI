@@ -53,17 +53,6 @@ python app.py --host 0.0.0.0 --port 3080 --data-dir /path/to/data
 | `--port` | `3080` | Port to listen on. |
 | `--data-dir` | `./data` | Where `chat.db` and `settings.json` are stored. |
 
-## Proxy settings
-
-Open **Settings → Proxy**:
-
-- **Use proxy** — master switch (off = direct connection; system `HTTP_PROXY` env
-  variables are intentionally ignored for predictable behaviour).
-- **Proxy URL** formats: `http://host:port`, `http://user:pass@host:port`,
-  `https://...`, or `socks5://host:port` (SOCKS5 requires
-  `pip install "httpx[socks]"`).
-- **Verify TLS certificates** — uncheck only if your proxy does MITM with a
-  self-signed certificate.
 
 ## Context window — limiting what gets sent to the API
 
@@ -116,7 +105,6 @@ How the token limit works:
 | `HTTP 401` in chat | Wrong API key in Settings |
 | `stream_options` errors | Handled automatically; or uncheck *Stream responses* in Settings |
 | Self-signed cert / SSL error behind a proxy | Uncheck *Verify TLS certificates* |
-| SOCKS proxy error `socksio is missing` | `pip install "httpx[socks]"` |
 
 ## Project layout
 
